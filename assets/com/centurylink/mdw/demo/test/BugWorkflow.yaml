@@ -1,0 +1,184 @@
+process: # 7
+  name: A Bug's Life
+  instance: 1
+  activity: # 1 "2018-10-10 15:42:08"
+    name: Create
+    status: Completed
+  activity: # 3 "2018-10-10 15:42:08"
+    name: |
+      Await
+      Resolution
+    status: Completed
+    result: Resolve
+  activity: # 6 "2018-10-10 15:42:22"
+    name: |
+      GitHub
+      Commit?
+    status: Completed
+    result: Yes
+  activity: # 4 "2018-10-10 15:42:22"
+    name: |
+      Retrieve
+      Commit
+    status: Completed
+  activity: # 2 "2018-10-10 15:42:23"
+    name: Close
+    status: Completed
+  variable: # 15
+    name: bug
+    value: |
+      {
+        "commitId": "${commitId}",
+        "description": "Someone needs to step up.  I'm not saying who...",
+        "severity": 2,
+        "title": "Missing documentation on package-level handlers"
+      }
+  variable: # 16
+    name: commit
+    value: |
+      {
+        "author": {
+          "gists_url": "https://api.github.com/users/donaldoakes/gists{/gist_id}",
+          "repos_url": "https://api.github.com/users/donaldoakes/repos",
+          "following_url": "https://api.github.com/users/donaldoakes/following{/other_user}",
+          "starred_url": "https://api.github.com/users/donaldoakes/starred{/owner}{/repo}",
+          "login": "donaldoakes",
+          "followers_url": "https://api.github.com/users/donaldoakes/followers",
+          "type": "User",
+          "url": "https://api.github.com/users/donaldoakes",
+          "subscriptions_url": "https://api.github.com/users/donaldoakes/subscriptions",
+          "received_events_url": "https://api.github.com/users/donaldoakes/received_events",
+          "avatar_url": "https://avatars1.githubusercontent.com/u/19718743?v=4",
+          "events_url": "https://api.github.com/users/donaldoakes/events{/privacy}",
+          "html_url": "https://github.com/donaldoakes",
+          "site_admin": false,
+          "id": 19718743,
+          "gravatar_id": "",
+          "node_id": "MDQ6VXNlcjE5NzE4NzQz",
+          "organizations_url": "https://api.github.com/users/donaldoakes/orgs"
+        },
+        "comments_url": "https://api.github.com/repos/CenturyLinkCloud/mdw-demo/commits/f5db6e0532fbc579a78f36def742b248f0cddfa1/comments",
+        "commit": {
+          "comment_count": 0,
+          "committer": {
+            "date": "2017-10-31T17:43:37Z",
+            "name": "dxoakes",
+            "email": "donald.oakes@centurylink.com"
+          },
+          "author": {
+            "date": "2017-10-31T17:43:37Z",
+            "name": "dxoakes",
+            "email": "donald.oakes@centurylink.com"
+          },
+          "tree": {
+            "sha": "67da321c013a4c727cfebd5c27e0856a9f3c5d58",
+            "url": "https://api.github.com/repos/CenturyLinkCloud/mdw-demo/git/trees/67da321c013a4c727cfebd5c27e0856a9f3c5d58"
+          },
+          "message": "updated test",
+          "url": "https://api.github.com/repos/CenturyLinkCloud/mdw-demo/git/commits/f5db6e0532fbc579a78f36def742b248f0cddfa1",
+          "verification": {
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null,
+            "verified": false
+          }
+        },
+        "committer": {
+          "gists_url": "https://api.github.com/users/donaldoakes/gists{/gist_id}",
+          "repos_url": "https://api.github.com/users/donaldoakes/repos",
+          "following_url": "https://api.github.com/users/donaldoakes/following{/other_user}",
+          "starred_url": "https://api.github.com/users/donaldoakes/starred{/owner}{/repo}",
+          "login": "donaldoakes",
+          "followers_url": "https://api.github.com/users/donaldoakes/followers",
+          "type": "User",
+          "url": "https://api.github.com/users/donaldoakes",
+          "subscriptions_url": "https://api.github.com/users/donaldoakes/subscriptions",
+          "received_events_url": "https://api.github.com/users/donaldoakes/received_events",
+          "avatar_url": "https://avatars1.githubusercontent.com/u/19718743?v=4",
+          "events_url": "https://api.github.com/users/donaldoakes/events{/privacy}",
+          "html_url": "https://github.com/donaldoakes",
+          "site_admin": false,
+          "id": 19718743,
+          "gravatar_id": "",
+          "node_id": "MDQ6VXNlcjE5NzE4NzQz",
+          "organizations_url": "https://api.github.com/users/donaldoakes/orgs"
+        },
+        "files": [{
+          "patch": "${~.*}",
+          "filename": "assets/com/centurylink/mdw/demo/test/BugWorkflow.test",
+          "additions": 6,
+          "deletions": 1,
+          "changes": 7,
+          "sha": "08be9657d5f1af64e5a1043aa0d3c676427d400c",
+          "blob_url": "https://github.com/CenturyLinkCloud/mdw-demo/blob/f5db6e0532fbc579a78f36def742b248f0cddfa1/assets/com/centurylink/mdw/demo/test/BugWorkflow.test",
+          "raw_url": "https://github.com/CenturyLinkCloud/mdw-demo/raw/f5db6e0532fbc579a78f36def742b248f0cddfa1/assets/com/centurylink/mdw/demo/test/BugWorkflow.test",
+          "status": "modified",
+          "contents_url": "https://api.github.com/repos/CenturyLinkCloud/mdw-demo/contents/assets/com/centurylink/mdw/demo/test/BugWorkflow.test?ref=f5db6e0532fbc579a78f36def742b248f0cddfa1"
+        }],
+        "html_url": "https://github.com/CenturyLinkCloud/mdw-demo/commit/f5db6e0532fbc579a78f36def742b248f0cddfa1",
+        "node_id": "MDY6Q29tbWl0OTI1MzQ5NDE6ZjVkYjZlMDUzMmZiYzU3OWE3OGYzNmRlZjc0MmIyNDhmMGNkZGZhMQ==",
+        "parents": [{
+          "html_url": "https://github.com/CenturyLinkCloud/mdw-demo/commit/84a8b096e669b39d14e0dd44c21c4136ac122659",
+          "sha": "84a8b096e669b39d14e0dd44c21c4136ac122659",
+          "url": "https://api.github.com/repos/CenturyLinkCloud/mdw-demo/commits/84a8b096e669b39d14e0dd44c21c4136ac122659"
+        }],
+        "sha": "f5db6e0532fbc579a78f36def742b248f0cddfa1",
+        "stats": {
+          "total": 7,
+          "additions": 6,
+          "deletions": 1
+        },
+        "url": "https://api.github.com/repos/CenturyLinkCloud/mdw-demo/commits/f5db6e0532fbc579a78f36def742b248f0cddfa1"
+      }
+process: # 6
+  name: Create Bug
+  instance: 1
+  activity: # 1 "2018-10-10 15:42:08"
+    name: Start
+    status: Completed
+  activity: # 7 "2018-10-10 15:42:08"
+    name: Bug Validator
+    status: Completed
+    result: true
+  activity: # 5 "2018-10-10 15:42:08"
+    name: Save Bug
+    status: Completed
+  activity: # 6 "2018-10-10 15:42:08"
+    name: |
+      Invoke Bug
+      Workflow
+    status: Completed
+  activity: # 2 "2018-10-10 15:42:08"
+    name: Created
+    status: Completed
+  variable: # 11
+    name: request
+    value: |
+      {
+        "description": "This is a sev 1 showstopper",
+        "severity": 1,
+        "title": "Don's car needs washing"
+      }
+  variable: # 12
+    name: requestHeaders
+    value: |
+      {
+        content-type: 'application/json',
+        HttpMethod: 'POST',
+        mdw-request-id: "${masterRequestId}"}
+  variable: # 13
+    name: response
+    value: |
+      {
+        "commitId": "${commitId}",
+        "description": "Someone needs to step up.  I'm not saying who...",
+        "severity": 2,
+        "title": "Missing documentation on package-level handlers"
+      }
+  variable: # 14
+    name: responseHeaders
+    value: |
+      {
+        "HttpStatusCode": "201",
+        "Location": "http://localhost:8080/mdw/demo/bugs/${id}"
+      }

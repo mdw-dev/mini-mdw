@@ -1,0 +1,50 @@
+import com.centurylink.mdw.util.file.Packages
+
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    }
+    dependencies {
+        classpath("com.centurylink.mdw:mdw-common:${mdwVersion}")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+
+group = "mini-mdw"
+version = '1.0.0'
+
+sourceCompatibility = 1.8
+
+sourceSets {
+    main {
+        java {
+            srcDirs "src/main/java"
+            srcDirs assetLoc
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+}
+
+dependencies {
+    compile group: 'com.centurylink.mdw', name: 'mdw-spring-boot', version: mdwVersion
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter', version: springBootVersion
+    // asset package dependencies
+    compileOnly fileTree(dir: "${assetLoc}", includes: ["**/*.jar"])
+}
+
+bootJar {
+    // Exclude assets from packaging to avoid NoClassDefFoundErrors
+    // (do not overlap packages between src/main/java and assets).
+    def assetPackages = new Packages(file(assetLoc))
+    exclude {
+        assetPackages.isAssetOutput(it.relativePath.toString())
+    }
+}
