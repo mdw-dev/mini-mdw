@@ -1,3 +1,3 @@
 ## io.mdwdev.mini.pkg.two
 
-version: 1.0.02
+version: 1.1.01
